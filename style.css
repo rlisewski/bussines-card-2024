@@ -1,0 +1,52 @@
+body {
+  background-color: #2C2141;
+  font-family: noto-sans, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 10px;
+  font-weight: 400;
+}
+.card {
+  padding: 1rem;
+  max-width: 300px;
+  max-height: 600px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 24px;
+  background-color: #F8F8F8;
+  border-radius: 16px;
+}
+
+.card__avatar-image {
+  max-width: 70px;
+  border-radius: 50%;
+}
+
+.card__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__content--link{
+  color: #ED6D05;
+  text-decoration: none;
+}
+
+.card__content--name{
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.card__content--jobTitle {
+  font-size: 12px;
+  font-weight: 400;
+}
