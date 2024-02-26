@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #2C2141;
   font-family: noto-sans, sans-serif;
@@ -5,18 +13,20 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 1rem;
 }
 
 p {
-  font-size: 10px;
   font-weight: 400;
+  line-height: 1.375;
 }
+
 .card {
-  padding: 1rem;
-  max-width: 300px;
-  max-height: 600px;
+  padding: 2rem;
   display: flex;
-  align-content: center;
+  flex-wrap: wrap;
+  flex-basis: 616px;
+  align-items: flex-start;
   justify-content: center;
   gap: 24px;
   background-color: #F8F8F8;
@@ -24,14 +34,13 @@ p {
 }
 
 .card__avatar-image {
-  max-width: 70px;
+  max-width: 148px;
   border-radius: 50%;
 }
 
-.card__content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.card__content {
+  flex-basis: 380px;
+  flex-grow: 1;
 }
 
 .card__content--link{
@@ -40,7 +49,7 @@ p {
 }
 
 .card__content--name{
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
   display: flex;
   flex-flow: column wrap;
